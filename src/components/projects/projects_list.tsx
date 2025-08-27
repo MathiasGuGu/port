@@ -14,7 +14,9 @@ export const ProjectsList = () => {
           <ProjectCard key={project.title} project={project} />
         ))}
       </div>
-      <p className="text-sm text-muted-foreground pt-4 sm:pt-6">Andre prosjekter</p>
+      <p className="text-sm text-muted-foreground pt-4 sm:pt-6">
+        Andre prosjekter
+      </p>
       <div className="w-full grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 sm:gap-4">
         {smallProjects.map((project) => (
           <SmallProjectCard key={project.title} project={project} />
