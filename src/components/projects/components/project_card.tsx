@@ -29,7 +29,7 @@ export const ProjectCard = ({ project }: { project: ProjectType }) => {
       <div className="absolute left-1/2 -translate-x-1/2 bottom-48 bg-white/5 duration-50 rounded-full z-100 size-96 blur-3xl" />
       <Card className="w-full h-auto shadow-inner bg-gradient-to-tr from-card-dark from-50% to-background/40 border border-border">
         <CardHeader className="px-6 ml-1 flex items-center justify-between">
-          <h3 className="text-2xl font-mono font-bold">{project.title}</h3>
+          <h3 className="text-3xl font-serif font-bold">{project.title}</h3>
           <p className="text-muted-foreground text-sm inline-block">
             {project.date}
           </p>
