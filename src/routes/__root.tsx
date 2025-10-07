@@ -120,7 +120,7 @@ function RootDocument({ children }: { children: React.ReactNode }) {
         <ThemeProvider>
           <Header />
           {children}
-          <TanstackDevtools
+          {/* <TanstackDevtools
             config={{
               position: "bottom-left",
             }}
@@ -129,9 +129,9 @@ function RootDocument({ children }: { children: React.ReactNode }) {
                 name: "Tanstack Router",
                 render: <TanStackRouterDevtoolsPanel />,
               },
-              // TanStackQueryDevtools,
+              TanStackQueryDevtools,
             ]}
-          />
+          /> */}
           <Scripts />
         </ThemeProvider>
       </body>
