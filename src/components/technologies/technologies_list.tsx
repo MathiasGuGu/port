@@ -6,7 +6,7 @@ export const TechnologiesList = () => {
       <h2 className="text-muted-foreground">
         Teknologiene jeg jobber med:
       </h2>
-      <div className="w-full items-start  grid grid-cols-5 gap-2 ">
+      <div className="w-full items-start grid md:grid-cols-5 grid-cols-3 gap-2 ">
         {
           technologiesList.map((tech) => (
             <div className="bg-gradient-to-tr from-card-dark to-background-light p-[2px] rounded-lg">
