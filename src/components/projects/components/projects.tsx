@@ -31,7 +31,7 @@ export const projects: ProjectType[] = [
       { url: "/holidaze/holidaze.webp", alt: "", description: "" },
       { url: "/holidaze/holidaze-browse.webp", alt: "", description: "" },
     ],
-    tags: ["React, Next.js", "Zustand", "Api", "TailwindCss", "Tanstack Query"],
+    tags: ["React", "Next.js", "Zustand", "Api", "TailwindCss", "Tanstack Query"],
     githubUrl: "",
     projectUrl: "https://bookatholidaze.netlify.app/",
   },
@@ -77,9 +77,6 @@ export const projects: ProjectType[] = [
     githubUrl: "",
     projectUrl: "",
   },
-];
-
-export const smallProjects: ProjectType[] = [
   {
     title: "Coolors",
     description:

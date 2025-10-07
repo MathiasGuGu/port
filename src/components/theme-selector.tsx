@@ -20,7 +20,7 @@ export function ThemeSelector() {
       case "dark":
         return <Moon />;
       default:
-        return <Moon />;
+        return <Moon />
     }
   };
 
