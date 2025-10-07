@@ -9,8 +9,9 @@ const LinkButton = createLink(Button);
 export const ProjectCard = ({ project }: { project: ProjectType }) => {
   return (
     <Card className="w-full h-auto shadow-none bg-gradient-to-tr from-card to-card-light">
-      <CardHeader className="px-6 ml-1">
+      <CardHeader className="px-6 ml-1 flex items-center justify-between">
         <h3 className="text-2xl font-mono font-bold">{project.title}</h3>
+        <p className="text-muted-foreground text-sm inline-block">{project.date}</p>
       </CardHeader>
       <CardContent className="px-6">
         <p className="text-muted-foreground text-base ml-1 mb-2 text-balance">{project.description}</p>
@@ -23,10 +24,14 @@ export const ProjectCard = ({ project }: { project: ProjectType }) => {
         </div>
       </CardContent>
       <CardFooter className="gap-2 ml-1">
-        <LinkButton to="/" className="w-full sm:w-auto">Gå til Github repo</LinkButton>
-        <LinkButton to="/" variant={"outline"} className="w-full sm:w-auto">
-          Se live nettside
-        </LinkButton>
+        {project.isGithub && (
+          <LinkButton to="/" className="w-full sm:w-auto">Gå til Github repo</LinkButton>
+        )}
+        {project.isLive && (
+          <LinkButton to="/" variant={"outline"} className="w-full sm:w-auto">
+            Se live nettside
+          </LinkButton>
+        )}
       </CardFooter>
     </Card>
   );

@@ -1,3 +1,4 @@
+import AboutMe from "@/components/about/about-me";
 import { ProjectsList } from "@/components/projects/projects_list";
 import { TechnologiesList } from "@/components/technologies/technologies_list";
 import { Button } from "@/components/ui/button";
@@ -12,7 +13,7 @@ function App() {
     <div className="bg-background max-w-screen overflow-x-hidden flex flex-col items-center justify-start w-screen h-auto gap-y-24">
       <section className="max-w-4xl w-full flex  flex-col gap-4 items-start justify-start">
         <h1 className="text-center text-4xl font-bold font-mono">
-          Fullstack utvikler | Systemutvikler
+          Fullstack utvikler
         </h1>
         <p className="text-muted-foreground max-w-3xl text-balance">
           Hei! Mitt navn er Mathias, jeg er 23 år gammel, er fra Stavanger og er fullstack utvikler.
@@ -33,6 +34,7 @@ function App() {
         </div>
       </section>
       <TechnologiesList />
+      <AboutMe />
       <ProjectsList />
       <footer className="w-full h-32"></footer>
     </div>
