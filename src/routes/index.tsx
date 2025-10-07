@@ -12,7 +12,7 @@ const ButtonLink = createLink(Button);
 
 function App() {
   return (
-    <div className="bg-background max-w-screen overflow-x-hidden flex flex-col items-center justify-start w-screen h-auto gap-y-24">
+    <div className="bg-background px-4 max-w-screen overflow-x-hidden flex flex-col items-center justify-start w-screen h-auto gap-y-24">
       <section className="max-w-4xl w-full flex  flex-col gap-4 items-start justify-start">
         <h1 className="text-center text-6xl font-bold font-serif">
           Fullstack utvikler
