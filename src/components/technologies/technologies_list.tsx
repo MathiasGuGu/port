@@ -1,3 +1,5 @@
+import { ButtonLink } from "../Header";
+import { Button } from "../ui/button";
 import { technologiesList } from "./components/technologies";
 
 export const TechnologiesList = () => {
@@ -9,11 +11,10 @@ export const TechnologiesList = () => {
       <div className="w-full items-start  grid grid-cols-5 gap-2 ">
         {
           technologiesList.map((tech) => (
-            <div
-              key={tech.name}
-              className="flex bg-gradient-to-tr from-card to-card-light items-center justify-center gap-2  h-auto border px-3 py-2 rounded-lg"
-            >
-              <span className="text-muted-foreground text-sm">{tech.name}</span>
+            <div className="bg-gradient-to-tr from-card-dark to-background-light p-[2px] rounded-lg">
+              <div className="w-full p-2 rounded-lg sm:w-auto shadow-inner bg-gradient-to-tr from-card-dark to-background-light/20 border border-border">
+                <span className="text-muted-foreground text-sm">{tech.name}</span>
+              </div>
             </div>
           ))
         }
