@@ -87,7 +87,7 @@ function App() {
       <TechnologiesList />
       {/* <AboutMe /> */}
       <ProjectsList />
-      <footer className="w-full h-32 flex flex-col items-center justify-center">
+      <footer className="w-full h-32 flex flex-col items-center justify-center gap-4">
         <div className=" text-muted-foreground text-sm flex items-center justify-center">
           Color theme is Supabase from
           <Button
@@ -119,6 +119,14 @@ function App() {
               Tweakcn.com
             </a>
           </Button>
+        </div>
+        <div className=" text-muted-foreground text-sm flex items-center justify-center">
+          Last updated{" "}
+          {new Date().toLocaleDateString("no-NO", {
+            year: "numeric",
+            month: "long",
+            day: "numeric",
+          })}
         </div>
       </footer>
     </div>
