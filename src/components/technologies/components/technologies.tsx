@@ -20,9 +20,9 @@ export const technologiesList = [
   {
     name: "Cypress",
   },
-  {
-    name: "Cloudflare Workers",
-  },
+  // {
+  //   name: "Cloudflare Workers",
+  // },
   {
     name: "AWS S3",
   },
