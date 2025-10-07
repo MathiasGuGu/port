@@ -111,7 +111,7 @@ export const projects: ProjectType[] = [
     projectUrl: "",
   },
   {
-    title: "frontinspo",
+    title: "Frontinspo",
     description:
       "Frontinspo er en inspirasjons side for frontend utviklere. Siden innholder mange kilder til inspirasjon, eksempler og fargepaletter. Nettsiden har filtrering, søkefunksjonalitet og autentikasjon.",
     imageUrl: [
@@ -122,7 +122,7 @@ export const projects: ProjectType[] = [
     projectUrl: "",
   },
   {
-    title: "ella",
+    title: "Ella",
     description:
       "Ella er en samarbeids applikasjon for enkelt utviklere og kundene dere. Ella var en platform hvor brukerne lastet opp bilder og tekst dokumenter som de kunne dele med andre brukere på samme prosjekt.",
     imageUrl: [
@@ -143,7 +143,7 @@ export const projects: ProjectType[] = [
     projectUrl: "",
   },
   {
-    title: "quill",
+    title: "Quill",
     description:
       "Quill er en AI drevet applikasjon som lar brukeren ha samtaler med PDF-dokumentene deres. Applikasjonen bruke pinecone til å lagre vektoriserte dokumenter og OpenAi til å svare på spørsmålene brukeren har om dokumentet.",
     imageUrl: [{ url: "/quill/quill.webp", alt: "", description: "" }],
@@ -159,14 +159,14 @@ export const projects: ProjectType[] = [
     projectUrl: "",
   },
   {
-    title: "sushi",
+    title: "Sushi",
     description:
       "Sushi er en kvitterings skanner applikasjon. Applikasjonen bruke OpenAi vision til å analysere tekst i bilder av kvitteringer og deretter lagre informasjonen i en database. Dataen ble kategorisert, analysert og visualisert for brukeren.",
     imageUrl: [
       { url: "/sushi/sushi.webp", alt: "", description: "" },
       { url: "/sushi/sushi-receipt.webp", alt: "", description: "" },
     ],
-    tags: [""],
+    tags: ["OpenAi Vision", "React", "TypeScript", "TailwindCss"],
     githubUrl: "",
     projectUrl: "",
   },

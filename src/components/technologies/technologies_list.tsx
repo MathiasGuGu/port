@@ -11,7 +11,7 @@ export const TechnologiesList = () => {
           technologiesList.map((tech) => (
             <div
               key={tech.name}
-              className="flex items-center justify-center gap-2  h-auto border px-3 py-2 rounded-lg"
+              className="flex bg-gradient-to-tr from-card to-card-light items-center justify-center gap-2  h-auto border px-3 py-2 rounded-lg"
             >
               <span className="text-muted-foreground text-sm">{tech.name}</span>
             </div>
@@ -21,3 +21,5 @@ export const TechnologiesList = () => {
     </section>
   );
 };
+
+

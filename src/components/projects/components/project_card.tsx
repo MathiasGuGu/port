@@ -8,15 +8,15 @@ const LinkButton = createLink(Button);
 
 export const ProjectCard = ({ project }: { project: ProjectType }) => {
   return (
-    <Card className="w-full h-auto shadow-none">
-      <CardHeader className=" px-6 ml-1">
+    <Card className="w-full h-auto shadow-none bg-gradient-to-tr from-card to-card-light">
+      <CardHeader className="px-6 ml-1">
         <h3 className="text-2xl font-mono font-bold">{project.title}</h3>
       </CardHeader>
       <CardContent className="px-6">
-        <p className="text-muted-foreground text-base ml-1 mb-2">{project.description}</p>
-        <div className="flex gap-2 mb-2 flex-wrap">
+        <p className="text-muted-foreground text-base ml-1 mb-2 text-balance">{project.description}</p>
+        <div className="flex gap-2 mb-2 flex-wrap mt-4">
           {project.tags.map((tag) => (
-            <Badge key={tag} variant={"outline"} className="text-xs sm:text-sm">
+            <Badge key={tag} variant={"outline"} className="text-xs text-muted-foreground bg-background">
               {tag}
             </Badge>
           ))}
