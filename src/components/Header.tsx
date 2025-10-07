@@ -27,7 +27,7 @@ export default function Header() {
                 </ButtonLink>
             );
           })}
-          <ThemeSelector />
+          {/* <ThemeSelector /> */}
       </nav>
     </header>
   );

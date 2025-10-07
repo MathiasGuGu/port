@@ -1,5 +1,3 @@
-import { ButtonLink } from "../Header";
-import { Button } from "../ui/button";
 import { technologiesList } from "./components/technologies";
 
 export const TechnologiesList = () => {
