@@ -2,11 +2,11 @@ import { technologiesList } from "./components/technologies";
 
 export const TechnologiesList = () => {
   return (
-    <section className="max-w-4xl flex  flex-col gap-4 items-start justify-start ">
+    <section className="max-w-4xl flex  flex-col gap-4 items-start justify-start w-full">
       <h2 className="text-muted-foreground">
         Teknologiene jeg jobber med:
       </h2>
-      <div className="w-full flex gap-x-3 gap-y-2 flex-wrap">
+      <div className="w-full items-start  grid grid-cols-5 gap-2 ">
         {
           technologiesList.map((tech) => (
             <div

@@ -16,6 +16,7 @@ body {
 
 :root {
   --background: oklch(0.9911 0 0);
+  --background-light: oklch(0.9911 0 0);
   --foreground: oklch(0.2046 0 0);
   --card: oklch(0.9711 0 0);
   --card-light: oklch(0.9911 0 0);
@@ -23,6 +24,7 @@ body {
   --popover: oklch(0.9911 0 0);
   --popover-foreground: oklch(0.4386 0 0);
   --primary: oklch(0.8348 0.1302 160.9080);
+  --primary-light: oklch(0.8348 0.1302 160.9080 / 0.5);
   --primary-foreground: oklch(0.2626 0.0147 166.4589);
   --secondary: oklch(0.9940 0 0);
   --secondary-foreground: oklch(0.2046 0 0);
@@ -72,13 +74,16 @@ body {
 
 .dark {
   --background: oklch(0 0 0);
+  --background-light: oklch(0.4 0 0);
   --foreground: oklch(0.9288 0.0126 255.5078);
+  --card-dark: oklch(0.22 0 0);
   --card: oklch(0.155 0 0);
   --card-light: oklch(0.220 0 0);
   --card-foreground: oklch(0.9288 0.0126 255.5078);
   --popover: oklch(0.2603 0 0);
   --popover-foreground: oklch(0.7348 0 0);
   --primary: oklch(0.4365 0.1044 156.7556);
+  --primary-light: oklch(0.67 0.1044 156.7556);
   --primary-foreground: oklch(0.9213 0.0135 167.1556);
   --secondary: oklch(0.2603 0 0);
   --secondary-foreground: oklch(0.9851 0 0);
@@ -126,13 +131,16 @@ body {
 
 @theme inline {
   --color-background: var(--background);
+  --color-background-light: var(--background-light);
   --color-foreground: var(--foreground);
   --color-card: var(--card);
+  --color-card-dark: var(--card-dark);
   --color-card-light: var(--card-light);
   --color-card-foreground: var(--card-foreground);
   --color-popover: var(--popover);
   --color-popover-foreground: var(--popover-foreground);
   --color-primary: var(--primary);
+  --color-primary-light: var(--primary-light);
   --color-primary-foreground: var(--primary-foreground);
   --color-secondary: var(--secondary);
   --color-secondary-foreground: var(--secondary-foreground);

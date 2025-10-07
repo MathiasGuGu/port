@@ -18,8 +18,8 @@ export const navLinks = [
 
 export default function Header() {
   return (
-    <header className="w-full max-w-screen mb-12 md:mb-24 h-18 text-foreground flex items-center justify-end px-2 sm:px-6 lg:px-12">
-      <nav className="w-full flex items-end justify-end ">
+    <header className="w-full max-w-screen mb-12 md:mb-24 h-18 text-foreground flex items-center justify-center">
+      <nav className="w-full flex items-end justify-end max-w-4xl">
           {navLinks.map((link) => {
             return (
                 <ButtonLink variant="ghost" to={link.to}>

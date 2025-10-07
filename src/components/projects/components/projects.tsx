@@ -40,24 +40,6 @@ export const projects: ProjectType[] = [
     date: "10. April 2024",
   },
   {
-    title: "PracAi",
-    description:
-      "AI-drevet intervjutrening med OpenAI GPT-integrasjon. Automatisk vurdering og tilbakemelding på tekniske og intervjuspørsmål.",
-    tags: [
-      "Tanstack Start",
-      "Postgres",
-      "Drizzle-orm",
-      "TailwindCss",
-      "React",
-      "Docker",
-    ],
-    githubUrl: "",
-    projectUrl: "",
-    isLive: false,
-    isGithub: true,
-    date: "6. Juni 2025",
-  },
-  {
     title: "Renote",
     description:
       "Høy-ytelse AI Notion-wrapper med automatisk synkronisering og spørsmålsgenerering. Bygget for skalerbarhet med avansert arkitektur og moderne teknologier.",
@@ -106,29 +88,7 @@ export const projects: ProjectType[] = [
     isGithub: true,
     date: "12. Desember 2023",
   },
-  {
-    title: "Artgal",
-    description:
-      "Artgal er en enkel kunst blog som ble laget på første året på Noroff (3 år siden). Nettsiden er en super enkel Blog med innholdssider, søkefunksjonalitet og en kontakt side.",
-    tags: ["Javascript", "CSS", "HTML"],
-    githubUrl: "",
-    projectUrl: "",
-    isLive: false,
-    isGithub: true,
-    date: "1. Januar 2023",
-  },
-  {
-    title: "Frontinspo",
-    description:
-      "Frontinspo er en inspirasjons side for frontend utviklere. Siden innholder mange kilder til inspirasjon, eksempler og fargepaletter. Nettsiden har filtrering, søkefunksjonalitet og autentikasjon.",
 
-    tags: ["React", "TypeScript", "TailwindCss", "HTML"],
-    githubUrl: "",
-    projectUrl: "",
-    isLive: false,
-    isGithub: true,
-    date: "2. Februar 2024",
-  },
   {
     title: "Ella",
     description:
@@ -167,17 +127,5 @@ export const projects: ProjectType[] = [
     isLive: false,
     isGithub: true,
     date: "10. Oktober 2024",
-  },
-  {
-    title: "Sushi",
-    description:
-      "Sushi er en kvitterings skanner applikasjon. Applikasjonen bruke OpenAi vision til å analysere tekst i bilder av kvitteringer og deretter lagre informasjonen i en database. Dataen ble kategorisert, analysert og visualisert for brukeren.",
-
-    tags: ["OpenAi Vision", "React", "TypeScript", "TailwindCss"],
-    githubUrl: "",
-    projectUrl: "",
-    isLive: false,
-    isGithub: true,
-    date: "9. Juni 2024",
   },
 ];
