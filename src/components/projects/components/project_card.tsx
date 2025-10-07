@@ -3,13 +3,20 @@ import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardFooter, CardHeader } from "@/components/ui/card";
 import { ProjectType } from "./projects";
 import { createLink } from "@tanstack/react-router";
+import { useMousePosition } from "@/hooks/useMousePosition";
+import {  useRef, RefObject } from "react";
 
 const LinkButton = createLink(Button);
 
 export const ProjectCard = ({ project }: { project: ProjectType }) => {
+  const cardRef = useRef<HTMLDivElement | null>(null);
+  const { x, y } = useMousePosition(cardRef as RefObject<HTMLElement> | null);
+
+
   return (
-  <div className="bg-gradient-to-tr from-card-dark to-background-light p-[4px] rounded-xl">
-    <Card className="w-full h-auto shadow-inner bg-gradient-to-tr from-card-dark from-50% to-background/40 border border-border">
+  <div ref={cardRef} className="bg-gradient-to-tr relative isolate from-card-dark to-background-light overflow-hidden p-[4px] rounded-xl">
+    <div className="absolute left-0 top-0 bg-white/5 duration-50 rounded-full z-100 size-96 blur-3xl will-change-transform" style={{ transform: `translate(${x - 192}px, ${y - 192}px)` }} />
+    <Card  className="w-full h-auto shadow-inner bg-gradient-to-tr from-card-dark from-50% to-background/40 border border-border">
       <CardHeader className="px-6 ml-1 flex items-center justify-between">
         <h3 className="text-2xl font-mono font-bold">{project.title}</h3>
         <p className="text-muted-foreground text-sm inline-block">{project.date}</p>
