@@ -9,10 +9,10 @@ export const navLinks = [
     to: "/",
     label: "Forside",
   },
-  {
-    to: "/blogg",
-    label: "Blogg",
-  },
+  // {
+  //   to: "/blogg",
+  //   label: "Blogg",
+  // },
 
 ];
 
