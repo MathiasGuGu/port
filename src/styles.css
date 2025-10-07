@@ -73,7 +73,7 @@ body {
 }
 
 .dark {
-  --background: oklch(0 0 0);
+  --background: oklch(0.17 0 1);
   --background-light: oklch(0.4 0 0);
   --foreground: oklch(0.9288 0.0126 255.5078);
   --card-dark: oklch(0.22 0 0);

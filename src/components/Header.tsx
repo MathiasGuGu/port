@@ -1,6 +1,6 @@
 import { createLink } from "@tanstack/react-router";
 import { Button } from "./ui/button";
-import { ThemeSelector } from "./theme-selector";
+// import { ThemeSelector } from "./theme-selector";
 
 export const ButtonLink = createLink(Button);
 
