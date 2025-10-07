@@ -85,7 +85,7 @@ function App() {
         </div>
       </section>
       <TechnologiesList />
-      <AboutMe />
+      {/* <AboutMe /> */}
       <ProjectsList />
       <footer className="w-full h-32 flex flex-col items-center justify-center">
         <div className=" text-muted-foreground text-sm flex items-center justify-center">
