@@ -3,7 +3,7 @@ import { technologiesList } from "./components/technologies";
 export const TechnologiesList = () => {
   return (
     <section className="max-w-4xl flex  flex-col gap-4 items-start justify-start ">
-      <h2 className="text-sm text-muted-foreground">
+      <h2 className="text-muted-foreground">
         Teknologiene jeg jobber med:
       </h2>
       <div className="w-full flex gap-x-3 gap-y-2 flex-wrap">

@@ -14,12 +14,10 @@ function App() {
         <h1 className="text-center text-4xl font-bold font-mono">
           Fullstack utvikler | Systemutvikler
         </h1>
-        <p className="leading-7 [&:not(:first-child)]:mt-2 [&:not(:last-child)]:mb-2 text-muted-foreground max-w-3xl text-balance text-sm sm:text-base">
-          Mitt navn er Mathias, jeg er en 23 år gammel systemutvikler fra
-          Stavanger. Jeg er en fullstack utvikler som fokuserer på frontend
-          teknologier som react, nextjs og typescript.
+        <p className="text-muted-foreground max-w-3xl text-balance">
+          Hei! Mitt navn er Mathias, jeg er 23 år gammel, er fra Stavanger og er fullstack utvikler.
         </p>
-        <div className="flex flex-col sm:flex-row gap-4 items-center justify-start w-full sm:w-auto">
+        <div className="flex flex-row gap-4 items-center justify-start w-full mt-6">
           <Button
             size="lg"
             asChild
@@ -36,6 +34,7 @@ function App() {
       </section>
       <TechnologiesList />
       <ProjectsList />
+      <footer className="w-full h-32"></footer>
     </div>
   );
 }
