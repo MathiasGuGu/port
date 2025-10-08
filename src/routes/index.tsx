@@ -12,12 +12,11 @@ function App() {
   return (
     <div className="bg-background px-4 max-w-screen overflow-x-hidden flex flex-col items-center justify-start w-screen h-auto gap-y-24">
       <section className="max-w-4xl w-full flex  flex-col gap-4 items-start justify-start">
-        <h1 className="text-start text-6xl font-bold font-serif">
+        <h1 className="text-start text-6xl font-bold font-serif text-foreground">
           Fullstack utvikler
         </h1>
         <p className="text-muted-foreground max-w-3xl text-balance">
-          Hei! Mitt navn er Mathias, jeg er 23 år gammel, er fra Stavanger og er
-          fullstack utvikler.
+          React og Typescript utvikler med stor interesse for systemer.
         </p>
         <div className="flex flex-row gap-2 items-center justify-start w-full mt-6">
           <div className="bg-gradient-to-tr dark:from-primary/50 from-primary to-primary-light dark:to-primary-light p-[2px] rounded-lg">
