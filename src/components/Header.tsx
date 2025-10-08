@@ -5,29 +5,28 @@ import { Button } from "./ui/button";
 export const ButtonLink = createLink(Button);
 
 export const navLinks = [
-  {
-    to: "/",
-    label: "Forside",
-  },
+  // {
+  //   to: "/",
+  //   label: "Forside",
+  // },
   // {
   //   to: "/blogg",
   //   label: "Blogg",
   // },
-
 ];
 
 export default function Header() {
   return (
     <header className="w-full max-w-screen mb-12 md:mb-24 h-18 text-foreground flex items-center justify-center">
       <nav className="w-full flex items-end justify-end max-w-4xl">
-          {navLinks.map((link) => {
-            return (
-                <ButtonLink variant="ghost" to={link.to}>
-                  {link.label}
-                </ButtonLink>
-            );
-          })}
-          {/* <ThemeSelector /> */}
+        {/* {navLinks.map((link) => {
+          return (
+            <ButtonLink variant="ghost" to={link.to}>
+              {link.label}
+            </ButtonLink>
+          );
+        })} */}
+        {/* <ThemeSelector /> */}
       </nav>
     </header>
   );
