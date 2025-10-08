@@ -13,8 +13,8 @@ export default function AboutMe() {
         begynte å lage hobby applikasjoner og nettsider da jeg var 18 år gammel.
         Dette førte meg videre til en høyere vitenskaplig utdanning i frontend
         utvikling. Jeg har siden utdanningen brukt mye av tiden min på å fordype
-        meg i <Tech>web- utvikling</Tech>, <Tech>infrastruktur</Tech>,
-        <Tech>distribuerte systemer</Tech> og <Tech>backend utvikling</Tech>.
+        meg i <Tech>web- utvikling</Tech>, <Tech>arkitektur</Tech>, og{" "}
+        <Tech>Typescript</Tech>.
       </p>
       <p>
         Jeg er en Typescript utvikler by heart, men eksperimenterer mye med
