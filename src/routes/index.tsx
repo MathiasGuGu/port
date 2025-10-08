@@ -73,7 +73,7 @@ function App() {
               <a
                 target={"_blank"}
                 rel="noopener noreferrer"
-                href="https://www.linkedin.com/in/mathias-grytnes-gu-gu/"
+                href="https://www.linkedin.com/in/mathiasgumpen/"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
