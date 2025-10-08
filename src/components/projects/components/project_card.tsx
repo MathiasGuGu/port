@@ -50,28 +50,28 @@ export const ProjectCard = ({ project }: { project: ProjectType }) => {
             ))}
           </div>
         </CardContent>
-        <CardFooter className="gap-2 ml-1">
+        <CardFooter className="gap-2 ml-1 z-100">
           {project.isGithub && (
             <div className="bg-gradient-to-tr dark:from-primary/50 from-primary to-primary-light dark:to-primary-light p-[2px] rounded-lg">
-              <LinkButton
-                to="/"
+              <Button
+                asChild
                 size="lg"
                 className="w-full sm:w-auto bg-gradient-to-tr from-primary to-primary/40 border border-primary shadow-inner"
               >
-                Github repo
-              </LinkButton>
+                <a href={project.githubUrl}>Github repo</a>
+              </Button>
             </div>
           )}
           {project.isLive && (
             <div className="bg-gradient-to-tr from-card-dark to-background-light p-[2px] rounded-lg">
-              <LinkButton
-                to="/"
+              <Button
+                asChild
                 size="lg"
                 variant={"secondary"}
                 className="w-full shadow-inner sm:w-auto bg-gradient-to-tr from-card-dark to-background-light/20 border border-border"
               >
-                Live nettside
-              </LinkButton>
+                <a href={project.projectUrl}>Live nettside</a>
+              </Button>
             </div>
           )}
         </CardFooter>
