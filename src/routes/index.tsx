@@ -38,9 +38,13 @@ function App() {
               asChild
               size="lg"
               variant={"secondary"}
-              className="w-full shadow-inner sm:w-auto bg-gradient-to-tr from-card-dark to-background-light/20 border border-border"
+              className="w-full  shadow-inner sm:w-auto bg-gradient-to-tr from-card-dark to-background-light/20 border border-border"
             >
-              <a href="https://github.com/MathiasGuGu">
+              <a
+                target={"_blank"}
+                rel="noopener noreferrer"
+                href="https://github.com/MathiasGuGu"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -66,7 +70,11 @@ function App() {
               variant={"secondary"}
               className="w-full sm:w-auto shadow-inner bg-gradient-to-tr from-card-dark to-background-light/20 border border-border"
             >
-              <a href="https://www.linkedin.com/in/mathias-grytnes-gu-gu/">
+              <a
+                target={"_blank"}
+                rel="noopener noreferrer"
+                href="https://www.linkedin.com/in/mathias-grytnes-gu-gu/"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
