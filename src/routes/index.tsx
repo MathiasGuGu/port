@@ -2,7 +2,7 @@ import AboutMe from "@/components/about/about-me";
 import { ProjectsList } from "@/components/projects/projects_list";
 import { TechnologiesList } from "@/components/technologies/technologies_list";
 import { Button } from "@/components/ui/button";
-import { createFileRoute, createLink } from "@tanstack/react-router";
+import { createFileRoute } from "@tanstack/react-router";
 
 export const Route = createFileRoute("/")({
   component: App,
@@ -12,11 +12,12 @@ function App() {
   return (
     <div className="bg-background px-4 max-w-screen overflow-x-hidden flex flex-col items-center justify-start w-screen h-auto gap-y-24">
       <section className="max-w-4xl w-full flex  flex-col gap-4 items-start justify-start">
-        <h1 className="text-start text-6xl font-bold font-serif text-foreground">
+        <h1 className="text-start uppercase text-6xl font-bold text-foreground">
           Fullstack utvikler
         </h1>
         <p className="text-muted-foreground max-w-3xl text-balance">
-          React og Typescript utvikler med stor interesse for systemer.
+          React og Typescript utvikler med stor interesse for systemer og
+          systemutvikling.
         </p>
         <div className="flex flex-row gap-2 items-center justify-start w-full mt-6">
           <div className="bg-gradient-to-tr dark:from-primary/50 from-primary to-primary-light dark:to-primary-light p-[2px] rounded-lg">
@@ -90,7 +91,18 @@ function App() {
       <ProjectsList />
       <footer className="w-full h-32 flex flex-col items-center justify-center gap-4">
         <div className=" text-muted-foreground text-sm flex items-center justify-center">
-          Color theme is Supabase from
+          Takk!
+        </div>
+        <div className=" text-muted-foreground text-sm flex items-center justify-center">
+          Sist Oppdatert{" "}
+          {new Date().toLocaleDateString("no-NO", {
+            year: "numeric",
+            month: "long",
+            day: "numeric",
+          })}
+        </div>
+        <div className=" text-muted-foreground text-sm flex items-center justify-center">
+          Color theme er Supabase fra
           <Button
             asChild
             variant={"link"}
@@ -120,14 +132,6 @@ function App() {
               Tweakcn.com
             </a>
           </Button>
-        </div>
-        <div className=" text-muted-foreground text-sm flex items-center justify-center">
-          Last updated{" "}
-          {new Date().toLocaleDateString("no-NO", {
-            year: "numeric",
-            month: "long",
-            day: "numeric",
-          })}
         </div>
       </footer>
     </div>

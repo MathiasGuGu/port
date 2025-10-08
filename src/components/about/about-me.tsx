@@ -7,7 +7,7 @@ const Tech = ({ children }: { children: React.ReactNode }) => {
 export default function AboutMe() {
   return (
     <section className="max-w-4xl w-full flex  flex-col gap-4 items-start justify-start text-muted-foreground">
-      <h2 className="text-2xl font-serif text-foreground">Om meg</h2>
+      <h2 className="text-2xl text-foreground">Om meg</h2>
       <p className="">
         Mitt navn er Mathias, jeg er 23 år gammel og kommer fra Stavanger. Jeg
         begynte å lage hobby applikasjoner og nettsider da jeg var 18 år gammel.
