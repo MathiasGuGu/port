@@ -29,4 +29,10 @@ export const technologiesList = [
   {
     name: "C# .NET",
   },
+  {
+    name: "Sanity",
+  },
+  {
+    name: "Azure",
+  },
 ];
