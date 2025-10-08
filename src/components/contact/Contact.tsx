@@ -30,39 +30,30 @@ const Contact = () => {
         eller noe annet.
       </p>
       <div className=" w-full">
-        <Card className="w-full h-auto shadow-inner bg-none border border-border">
-          <CardHeader className="px-6 ml-1 flex items-center justify-between">
-            <p className="text-muted-foreground text-sm uppercase">
-              Kopier epost
-            </p>
-          </CardHeader>
-          <CardContent className="px-6">
-            <div>
-              <div className="w-full text-muted-foreground rounded-lg h-auto shadow-inner bg-gradient-to-tr from-card-dark from-50% to-background/40 border border-border">
-                <InputGroup className="h-12">
-                  <InputGroupInput
-                    className="placeholder:text-base"
-                    placeholder="mathias.gumpen.gundersen@gmail.com"
-                    readOnly
-                  />
-                  <InputGroupAddon align="inline-end">
-                    <InputGroupButton
-                      aria-label="Copy"
-                      title="Copy"
-                      size="icon-sm"
-                      onClick={() => {
-                        copy("mathias.gumpen.gundersen@gmail.com");
-                      }}
-                    >
-                      {isCopied ? <Check /> : <Copy />}
-                    </InputGroupButton>
-                  </InputGroupAddon>
-                </InputGroup>
-              </div>
-            </div>
-            {/* <Seperator /> */}
-          </CardContent>
-        </Card>
+        <div>
+          <div className="w-full text-muted-foreground rounded-lg h-auto shadow-inner bg-gradient-to-tr from-card-dark from-50% to-background/40 border border-border">
+            <InputGroup className="h-12">
+              <InputGroupInput
+                className="placeholder:text-base"
+                placeholder="mathias.gumpen.gundersen@gmail.com"
+                readOnly
+              />
+              <InputGroupAddon align="inline-end">
+                <InputGroupButton
+                  aria-label="Copy"
+                  title="Copy"
+                  size="icon-sm"
+                  onClick={() => {
+                    copy("mathias.gumpen.gundersen@gmail.com");
+                  }}
+                >
+                  {isCopied ? <Check /> : <Copy />}
+                </InputGroupButton>
+              </InputGroupAddon>
+            </InputGroup>
+          </div>
+        </div>
+        {/* <Seperator /> */}
       </div>
     </div>
   );
