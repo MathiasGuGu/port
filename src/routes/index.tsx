@@ -11,8 +11,8 @@ export const Route = createFileRoute("/")({
 
 function App() {
   return (
-    <div className="bg-background px-4 max-w-screen overflow-x-hidden flex flex-col items-center justify-start w-screen h-auto gap-y-24">
-      <div className="absolute left-1/2 -translate-x-1/2 -top-[600px] bg-white/5 duration-50 rounded-full z-100 size-[800px] blur-3xl" />
+    <div className="bg-background px-4 max-w-screen flex flex-col items-center justify-start w-screen h-auto gap-y-24 overflow-x-hidden">
+      <div className="absolute left-1/2 -translate-x-1/2 -top-[600px] bg-white/5 duration-50 rounded-full z-100 w-[30vw] md:w-[50vw] aspect-square blur-3xl" />
       <section className="max-w-4xl w-full flex  flex-col gap-4 items-start justify-start">
         <h1 className="text-start uppercase text-6xl font-bold text-foreground">
           Fullstack utvikler

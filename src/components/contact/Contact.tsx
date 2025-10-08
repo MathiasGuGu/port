@@ -1,5 +1,4 @@
-import { useMousePosition } from "@/hooks/useMousePosition";
-import { Card, CardContent, CardFooter, CardHeader } from "../ui/card";
+import { Card, CardContent, CardHeader } from "../ui/card";
 import {
   InputGroup,
   InputGroupAddon,
@@ -9,17 +8,17 @@ import {
 import { Check, Copy } from "lucide-react";
 import { useCopyToClipboard } from "@/hooks/useCopyToClipboard";
 
-const Seperator = () => {
-  return (
-    <div className="w-full h-px my-8 grid grid-cols-[1fr_70px_1fr] items-center gap-2">
-      <span className="w-full h-px bg-muted-foreground/20"></span>
-      <span className="flex items-center justify-center text-xs text-muted-foreground uppercase">
-        Eller
-      </span>
-      <span className="w-full h-px bg-muted-foreground/20"></span>
-    </div>
-  );
-};
+// const Seperator = () => {
+//   return (
+//     <div className="w-full h-px my-8 grid grid-cols-[1fr_70px_1fr] items-center gap-2">
+//       <span className="w-full h-px bg-muted-foreground/20"></span>
+//       <span className="flex items-center justify-center text-xs text-muted-foreground uppercase">
+//         Eller
+//       </span>
+//       <span className="w-full h-px bg-muted-foreground/20"></span>
+//     </div>
+//   );
+// };
 
 const Contact = () => {
   const { isCopied, copy } = useCopyToClipboard();
