@@ -65,7 +65,7 @@ const startFrames = [
   "__________🏎️|_______________",
   "__________🏎️_______________",
   "_________|🏎️_______________",
-]
+];
 
 const idleFrames = [
   "________|_🏎️_________________",
@@ -91,10 +91,9 @@ const idleFrames = [
   "__________🏎️|________________",
   "__________🏎️_________________",
   "_________|🏎️_________________",
-]
+];
 
 function RootDocument({ children }: { children: React.ReactNode }) {
-
   const [currentFrame, setCurrentFrame] = useState(0);
   const [isStartFrames, setIsStartFrames] = useState(true);
   useLayoutEffect(() => {
@@ -105,11 +104,14 @@ function RootDocument({ children }: { children: React.ReactNode }) {
         setCurrentFrame(0);
       }
 
-      document.title = `${isStartFrames ? startFrames[currentFrame % startFrames.length] : idleFrames[currentFrame % idleFrames.length]} - mathiasgumpen.com`;
+      document.title = `${
+        isStartFrames
+          ? startFrames[currentFrame % startFrames.length]
+          : idleFrames[currentFrame % idleFrames.length]
+      } - mathiasgumpen.com`;
     }, 200);
     return () => clearInterval(interval);
   }, [currentFrame]);
-
 
   return (
     <html lang="en">

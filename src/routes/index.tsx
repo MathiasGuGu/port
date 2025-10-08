@@ -8,8 +8,6 @@ export const Route = createFileRoute("/")({
   component: App,
 });
 
-const ButtonLink = createLink(Button);
-
 function App() {
   return (
     <div className="bg-background px-4 max-w-screen overflow-x-hidden flex flex-col items-center justify-start w-screen h-auto gap-y-24">
@@ -89,7 +87,7 @@ function App() {
         </div>
       </section>
       <TechnologiesList />
-      {/* <AboutMe /> */}
+      <AboutMe />
       <ProjectsList />
       <footer className="w-full h-32 flex flex-col items-center justify-center gap-4">
         <div className=" text-muted-foreground text-sm flex items-center justify-center">
