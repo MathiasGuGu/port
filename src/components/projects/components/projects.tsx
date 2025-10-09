@@ -71,30 +71,30 @@ export const projects: ProjectType[] = [
     isGithub: true,
     date: "4. April 2025",
   },
-  {
-    title: "Coolors",
-    description:
-      "Coolors er en fargepalett generator. Alle fargene generert er WCAG AAA godkjent og fargene bruker fargeteori til å lage fargepaletter som ser bra ut sammen.",
+  // {
+  //   title: "Coolors",
+  //   description:
+  //     "Coolors er en fargepalett generator. Alle fargene generert er WCAG AAA godkjent og fargene bruker fargeteori til å lage fargepaletter som ser bra ut sammen.",
 
-    tags: ["Svelte", "TypeScript", "WCAG"],
-    githubUrl: "https://github.com/MathiasGuGu/colors",
-    projectUrl: "",
-    isLive: false,
-    isGithub: true,
-    date: "2. Februar 2024",
-  },
-  {
-    title: "Biddify",
-    description:
-      "Biddify er en fiktiv auksjonsplattform for studenter. Applikasjonen bruker ett API gitt av Noroff. Brukere kan legge ut ting for auksjon, by på ting og se sine aktive auksjoner.",
+  //   tags: ["Svelte", "TypeScript", "WCAG"],
+  //   githubUrl: "https://github.com/MathiasGuGu/colors",
+  //   projectUrl: "",
+  //   isLive: false,
+  //   isGithub: true,
+  //   date: "2. Februar 2024",
+  // },
+  // {
+  //   title: "Biddify",
+  //   description:
+  //     "Biddify er en fiktiv auksjonsplattform for studenter. Applikasjonen bruker ett API gitt av Noroff. Brukere kan legge ut ting for auksjon, by på ting og se sine aktive auksjoner.",
 
-    tags: ["Javascript", "CSS", "HTML"],
-    githubUrl: "https://github.com/MathiasGuGu/exam-winter-2024",
-    projectUrl: "funny-hotteok-1ffc10.netlify.app",
-    isLive: true,
-    isGithub: true,
-    date: "12. Desember 2023",
-  },
+  //   tags: ["Javascript", "CSS", "HTML"],
+  //   githubUrl: "https://github.com/MathiasGuGu/exam-winter-2024",
+  //   projectUrl: "funny-hotteok-1ffc10.netlify.app",
+  //   isLive: true,
+  //   isGithub: true,
+  //   date: "12. Desember 2023",
+  // },
 
   {
     title: "Ella",
@@ -117,22 +117,22 @@ export const projects: ProjectType[] = [
     isGithub: true,
     date: "1. Mars 2025",
   },
-  {
-    title: "Quill",
-    description:
-      "Quill er en AI drevet applikasjon som lar brukeren ha samtaler med PDF-dokumentene deres. Applikasjonen bruke pinecone til å lagre vektoriserte dokumenter og OpenAi til å svare på spørsmålene brukeren har om dokumentet.",
-    tags: [
-      "Next.js",
-      "TailwindCss",
-      "PineconeDb",
-      "OpenAi",
-      "postgresql",
-      "ClerkJs",
-    ],
-    githubUrl: "https://github.com/MathiasGuGu/pdfreader",
-    projectUrl: "",
-    isLive: false,
-    isGithub: true,
-    date: "10. Oktober 2024",
-  },
+  // {
+  //   title: "Quill",
+  //   description:
+  //     "Quill er en AI drevet applikasjon som lar brukeren ha samtaler med PDF-dokumentene deres. Applikasjonen bruke pinecone til å lagre vektoriserte dokumenter og OpenAi til å svare på spørsmålene brukeren har om dokumentet.",
+  //   tags: [
+  //     "Next.js",
+  //     "TailwindCss",
+  //     "PineconeDb",
+  //     "OpenAi",
+  //     "postgresql",
+  //     "ClerkJs",
+  //   ],
+  //   githubUrl: "https://github.com/MathiasGuGu/pdfreader",
+  //   projectUrl: "",
+  //   isLive: false,
+  //   isGithub: true,
+  //   date: "10. Oktober 2024",
+  // },
 ];
