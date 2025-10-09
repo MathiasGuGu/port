@@ -7,7 +7,7 @@ export interface Experience {
 export const experience: Experience[] = [
   {
     company: "Kulien ANS",
-    date: "November 2024 - Juni 2025",
+    date: "2024 - 2025",
     points: [
       "Leverte produksjonsklar nettside fra planlegging til lansering, med gjennomsnittlig PageSpeed-score på 95+ og lastetider under 2 sekunder",
       "Økte Google-synlighet for Kulien ANS med 400% gjennom SEO-optimalisert landingsside, semantisk HTML og responsiv design med 98% mobilbrukbarhetsscore",
@@ -17,7 +17,7 @@ export const experience: Experience[] = [
   },
   {
     company: "Norkart AS",
-    date: "Mai 2024 - Januar 2025",
+    date: "2024 - 2025",
     points: [
       "Utviklet MeldAvvik-plattform som gjør det mulig for innbyggere å rapportere infrastrukturproblemer til kommuner",
       "Bygget responsivt kommunedashboard med avansert filtrering, interaktive kart og sorterbare datavisninger",

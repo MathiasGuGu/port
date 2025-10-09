@@ -17,16 +17,16 @@ export const ProjectCard = ({ project }: { project: ProjectType }) => {
   return (
     <div
       ref={cardRef}
-      className="bg-gradient-to-tr relative isolate from-card-dark to-background-light overflow-hidden p-[4px] rounded-xl"
+      className="bg-gradient-to-tr relative isolate from-card-dark to-background-light overflow-hidden p-[4px]"
     >
       <div
         className="absolute left-0 top-0 bg-white/2 duration-50 rounded-full z-100 size-96 blur-3xl will-change-transform"
         style={{ transform: `translate(${x - 192}px, ${y - 192}px)` }}
       />
       <div className="absolute left-1/2 -translate-x-1/2 bottom-48 bg-white/5 duration-50 rounded-full z-100 size-96 blur-3xl" />
-      <Card className="w-full h-auto shadow-inner bg-gradient-to-tr from-card-dark from-50% to-background/40 border border-border">
+      <Card className="w-full rounded-none h-auto shadow-inner bg-gradient-to-tr from-card-dark from-50% to-background/40 border border-border">
         <CardHeader className="px-6 ml-1 flex items-center justify-between">
-          <h3 className="text-3xl font-serif font-bold">{project.title}</h3>
+          <h5 className="text-3xl font-bold">{project.title}</h5>
           <p className="text-muted-foreground text-sm inline-block">
             {project.date}
           </p>
