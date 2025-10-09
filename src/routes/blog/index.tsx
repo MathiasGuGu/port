@@ -17,10 +17,10 @@ function RouteComponent() {
           Av og til legger jeg ut innhold om teknologier, nyheter og prosjekter.
         </p>
       </section>
-      <section className="max-w-4xl w-full flex  flex-col gap-4 items-start justify-start">
+      <section className="max-w-4xl h-[40vh] grow  w-full flex  flex-col gap-4 items-start justify-start">
         <BlogList />
       </section>
-      {/* <footer className="w-full h-32 flex flex-col items-center justify-center gap-4">
+      <footer className="w-full h-32 flex flex-col items-center justify-center gap-4">
         <div className=" text-muted-foreground text-sm flex items-center justify-center">
           Takk!
         </div>
@@ -32,7 +32,7 @@ function RouteComponent() {
             day: "numeric",
           })}
         </div>
-      </footer> */}
+      </footer>
     </div>
   );
 }
