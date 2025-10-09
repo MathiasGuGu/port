@@ -32,7 +32,7 @@ function App() {
               asChild
               className="w-full sm:w-auto bg-gradient-to-tr from-primary to-primary/40 border border-primary shadow-inner"
             >
-              <a href="/cv-27_08_25.pdf" download="Mathias_Grytnes_CV.pdf">
+              <a href="/Resume2.pdf" download="CV_mathias_gumpen.pdf">
                 Last ned CV
               </a>
             </Button>
@@ -43,9 +43,9 @@ function App() {
       </section>
       <TechnologiesList />
       <AboutMe />
+      <EducationList />
+      <ExperienceList />
       <ProjectsList />
-      {/* <ExperienceList />
-      <EducationList /> */}
       <Contact />
       <footer className="w-full h-auto min-h-32 flex flex-col items-center justify-center gap-4">
         <div className="flex items-center justify-center gap-4">

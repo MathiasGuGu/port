@@ -6,12 +6,12 @@ export interface Education {
 
 export const education: Education[] = [
     {
-      school: "University of California, Berkeley",
-      date: "2015 - 2019",
+      school: "Noroff School of Technology, Kristiansand",
+      date: "2022 - 2024",
       points: [
-        "Bachelor of Science in Computer Science",
-        "Graduated with Honors",
-        "Relevant Coursework: Data Structures, Algorithms, Database Systems, Web Development",
+        "Høyere vitenskaplig grad i Frontend Utvikling",
+        "Gikk gjennom studiet med høye karakterer og utmerkelser",
+        "Relevante fag: Frontend rammeverk, Versjonskontroll, Javascript & Typescript, CI/CD, Testing",
       ],
     }
 ];
