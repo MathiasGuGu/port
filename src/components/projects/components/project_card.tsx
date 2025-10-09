@@ -10,6 +10,7 @@ import { ProjectType } from "./projects";
 import { createLink } from "@tanstack/react-router";
 import { useMousePosition } from "@/hooks/useMousePosition";
 import { useRef, RefObject } from "react";
+import ProjectDialog from "./project-dialog";
 
 const LinkButton = createLink(Button);
 
@@ -74,6 +75,7 @@ export const ProjectCard = ({ project }: { project: ProjectType }) => {
               </Button>
             </div>
           )}
+          {/* <ProjectDialog /> */}
         </CardFooter>
       </Card>
     </div>
