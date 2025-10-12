@@ -1,7 +1,5 @@
 const Tech = ({ children }: { children: React.ReactNode }) => {
-  return (
-    <div className="inline-block underline text-primary-light">{children}</div>
-  );
+  return <span className="underline text-primary-light">{children}</span>;
 };
 
 export default function AboutMe() {

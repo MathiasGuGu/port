@@ -31,7 +31,7 @@ export const Route = createRootRouteWithContext<MyRouterContext>()({
         content: "width=device-width, initial-scale=1",
       },
       {
-        title: "_🏎️______________________",
+        title: "Portfolio -Mathias Gumpen Gundersen",
       },
     ],
     links: [
@@ -45,74 +45,7 @@ export const Route = createRootRouteWithContext<MyRouterContext>()({
   shellComponent: RootDocument,
 });
 
-const startFrames = [
-  "_🏎️______________________",
-  "__🏎️______________________",
-  "___🏎️______________________",
-  "____🏎️______________________",
-  "_____🏎️______________________",
-  "______🏎️______________________",
-  "_______🏎️______________________",
-  "________🏎️______________________",
-  "_________🏎️______________________",
-  "__________🏎️______________________",
-  "__________🏎️______|_______________",
-  "__________🏎️_____|_______________",
-  "__________🏎️____|_______________",
-  "__________🏎️___|_______________",
-  "__________🏎️__|_______________",
-  "__________🏎️_|_______________",
-  "__________🏎️|_______________",
-  "__________🏎️_______________",
-  "_________|🏎️_______________",
-];
-
-const idleFrames = [
-  "________|_🏎️_________________",
-  "_______|__🏎️_________________",
-  "______|___🏎️_________________",
-  "_____|____🏎️_________________",
-  "____|_____🏎️_________________",
-  "___|______🏎️_________________",
-  "__|_______🏎️_________________",
-  "_|________🏎️_________________",
-  "|_________🏎️__________________",
-  "__________🏎️___________|_____",
-  "__________🏎️__________|______",
-  "__________🏎️_________|_______",
-  "__________🏎️________|________",
-  "__________🏎️_______|_________",
-  "__________🏎️______|__________",
-  "__________🏎️_____|___________",
-  "__________🏎️____|____________",
-  "__________🏎️___|_____________",
-  "__________🏎️__|______________",
-  "__________🏎️_|_______________",
-  "__________🏎️|________________",
-  "__________🏎️_________________",
-  "_________|🏎️_________________",
-];
-
 function RootDocument({ children }: { children: React.ReactNode }) {
-  const [currentFrame, setCurrentFrame] = useState(0);
-  const [isStartFrames, setIsStartFrames] = useState(true);
-  useLayoutEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentFrame(currentFrame + 1);
-      if (currentFrame === startFrames.length - 1) {
-        setIsStartFrames(false);
-        setCurrentFrame(0);
-      }
-
-      document.title = `${
-        isStartFrames
-          ? startFrames[currentFrame % startFrames.length]
-          : idleFrames[currentFrame % idleFrames.length]
-      } - mathiasgumpen.com`;
-    }, 200);
-    return () => clearInterval(interval);
-  }, [currentFrame]);
-
   return (
     <html lang="en">
       <head>
@@ -122,18 +55,6 @@ function RootDocument({ children }: { children: React.ReactNode }) {
         <ThemeProvider>
           <Header />
           {children}
-          {/* <TanstackDevtools
-            config={{
-              position: "bottom-left",
-            }}
-            plugins={[
-              {
-                name: "Tanstack Router",
-                render: <TanStackRouterDevtoolsPanel />,
-              },
-              TanStackQueryDevtools,
-            ]}
-          /> */}
           <Scripts />
         </ThemeProvider>
       </body>
