@@ -3,18 +3,12 @@ import {
   Scripts,
   createRootRouteWithContext,
 } from "@tanstack/react-router";
-import { TanStackRouterDevtoolsPanel } from "@tanstack/react-router-devtools";
-import { TanstackDevtools } from "@tanstack/react-devtools";
 
 import Header from "../components/Header";
-
-import TanStackQueryDevtools from "../integrations/tanstack-query/devtools";
 
 import appCss from "../styles.css?url";
 
 import type { QueryClient } from "@tanstack/react-query";
-import { ThemeProvider } from "@/hooks/useTheme";
-import { useLayoutEffect, useState } from "react";
 
 interface MyRouterContext {
   queryClient: QueryClient;
@@ -52,11 +46,9 @@ function RootDocument({ children }: { children: React.ReactNode }) {
         <HeadContent />
       </head>
       <body>
-        <ThemeProvider>
-          <Header />
-          {children}
-          <Scripts />
-        </ThemeProvider>
+        <Header />
+        {children}
+        <Scripts />
       </body>
     </html>
   );
