@@ -46,31 +46,31 @@ export const projects: ProjectType[] = [
     isGithub: true,
     date: "10. April 2024",
   },
-  {
-    title: "Renote",
-    description:
-      "Høy-ytelse AI Notion-wrapper med automatisk synkronisering og spørsmålsgenerering. Bygget for skalerbarhet med avansert arkitektur og moderne teknologier.",
+  // {
+  //   title: "Renote",
+  //   description:
+  //     "Høy-ytelse AI Notion-wrapper med automatisk synkronisering og spørsmålsgenerering. Bygget for skalerbarhet med avansert arkitektur og moderne teknologier.",
 
-    tags: [
-      "React",
-      "Next.js",
-      "TypeScript",
-      "TailwindCss",
-      "OpenAi",
-      "BullMQ",
-      "Sqlite",
-      "Cloudflare Workers",
-      "Redis",
-      "Zustand",
-      "Tanstack Query",
-      "OAuth",
-    ],
-    githubUrl: "https://github.com/MathiasGuGu/renote",
-    projectUrl: "",
-    isLive: false,
-    isGithub: true,
-    date: "4. April 2025",
-  },
+  //   tags: [
+  //     "React",
+  //     "Next.js",
+  //     "TypeScript",
+  //     "TailwindCss",
+  //     "OpenAi",
+  //     "BullMQ",
+  //     "Sqlite",
+  //     "Cloudflare Workers",
+  //     "Redis",
+  //     "Zustand",
+  //     "Tanstack Query",
+  //     "OAuth",
+  //   ],
+  //   githubUrl: "https://github.com/MathiasGuGu/renote",
+  //   projectUrl: "",
+  //   isLive: false,
+  //   isGithub: true,
+  //   date: "4. April 2025",
+  // },
   // {
   //   title: "Coolors",
   //   description:
@@ -96,27 +96,6 @@ export const projects: ProjectType[] = [
   //   date: "12. Desember 2023",
   // },
 
-  {
-    title: "Ella",
-    description:
-      "Ella er en samarbeids applikasjon for enkelt utviklere og kundene dere. Ella var en platform hvor brukerne lastet opp bilder og tekst dokumenter som de kunne dele med andre brukere på samme prosjekt.",
-
-    tags: [
-      "Next.js",
-      "TypeScript",
-      "TailwindCss",
-      "PostgreSQL",
-      "AWS S3",
-      "OpenAi",
-      "Trpc",
-      "Zustand",
-    ],
-    githubUrl: "https://github.com/MathiasGuGu/Ella",
-    projectUrl: "",
-    isLive: false,
-    isGithub: true,
-    date: "1. Mars 2025",
-  },
   // {
   //   title: "Quill",
   //   description:

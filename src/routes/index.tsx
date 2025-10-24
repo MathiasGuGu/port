@@ -43,9 +43,9 @@ function App() {
       </section>
       <TechnologiesList />
       <AboutMe />
+      <ProjectsList />
       <EducationList />
       <ExperienceList />
-      <ProjectsList />
       <Contact />
       <footer className="w-full h-auto min-h-32 flex flex-col items-center justify-center gap-4">
         <div className="flex items-center justify-center gap-4">
